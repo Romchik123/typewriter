@@ -1,7 +1,6 @@
 const sentence = "hello there from lighthouse labs";
 
 let timer = 0;
-let interval = 50;
 
 // When running, run it in the terminal! ::
 for (let i = 0; i <= sentence.length; i++) {
@@ -11,5 +10,5 @@ for (let i = 0; i <= sentence.length; i++) {
     } else if (i === sentence.length) {
       console.log("");
     }
-  }, (timer += interval)); // <= 1s delay to make it noticeable. Can dial it down later.
+  }, (timer += 50)); // <= 1s delay to make it noticeable. Can dial it down later.
 }
